@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/imgs/imageLogo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/stype.css">
+    <link rel="stylesheet" href="assets/icon/themify-icons/themify-icons.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="player">
+        <!-- chứa tên bài hát and danh sách các bài hát -->
+        <div class="dashoard">
+
+            <!-- chứa tên tác giả and tên music -->
+            <header class="mb-16">
+                <h4>now playing</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- chứa ảnh mô tả music -->
+            <div class="cd" style="width: 200px; opacity: 1;">
+                <div class="cd-thumb" style="background-image: url(https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg);">
+                </div>
+            </div>
+            
+            <!-- control -->
+             <div class="control">
+                <!-- chứa các nut btn -->
+
+                <div class="btn btn-repeat">
+                    <i class="ti-reload"></i>
+                </div>
+                
+                <div class="btn btn-prev">
+                    <i class="ti-control-skip-backward"></i>
+                </div>
+
+                <div class="btn btn-toggle-play">
+                    <i class="ti-control-pause icon-pause"></i>
+                    <i class="ti-control-play icon-play"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="ti-control-skip-forward"></i>
+                </div>
+
+                <div class="btn btn-random">
+                    <i class="ti-control-shuffle"></i>
+                </div>
+
+                <div class="btn btn-volume">
+                    <i class="ti-volume"></i>
+                    <input id="volume" class="volume" type="range" value="100" min="0" max="100">
+                </div>
+             </div>
+
+             <!-- Tiến trình music -->
+             <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+             <!-- play music -->
+             <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- play list -->
+        <div class="playList">
+            <!-- list item music -->
+            <!-- <div class="song">
+                <div class="thumb" style="background-image: url(https://a10.gaanacdn.com/images/albums/72/3019572/crop_480x480_3019572.jpg);"></div>
+                <div class="body">
+                    <h3 class="title">Tên Bài Hát</h3>
+                        <p class="author">Ca sĩ / nhóm nhạc</p>
+                </div>
+                <div class="option">
+                    <i class="ti-more-alt"></i>
+                </div>
+            </div>       -->
+        </div>
+
+        <script src="assets/JS/main.js"></script>
+    </div>
+</body>
+</html>
